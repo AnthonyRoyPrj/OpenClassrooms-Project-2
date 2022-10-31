@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
-
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/d494759333.js" crossorigin="anonymous"></script>
 </head>
-    
+
 <body>
     <header class="header">
-        <div class="header__logo">
+        <div class="header__logo body-gap">
             <img src="images/logo/Booki-resized.png" alt="Logo Booki" />
         </div>
         <nav class="nav">
@@ -23,7 +26,54 @@
             </ul>
         </nav>
     </header>
+    <main class="main">
+        <h1 class="main__heading font-primary-title body-gap">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="main__catch-phrase body-gap">En plein centre-ville ou en pleine nature</p>
+        <form class="city-form body-gap">
+            <div class="city-form__location">
+                <i class="fa-solid fa-location-dot fa-lg"></i>
+            </div>
+            <input class="city-form__destination font-footer-title" type="search" value="Marseille, France" />
+            <input class="city-form__submit-button font-footer-title" type="submit" value="Rechercher" />
+            <div class="city-form__glass">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </form>
+        <div class="filters">
+            <h2 class="filters__title font-footer-title">Filtres</h2>
+            <div class="filters__box font-filters">
+                <div class="filters__icon">
+                    <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+                </div>
+                <p class="filters__category">Économique</p>
+            </div>
+            <div class="filters__box font-filters">
+                <div class="filters__icon">
+                    <i class="fa-solid fa-person fa-lg"></i>
+                </div>
+                <p class="filters__category">Familial</p>
+            </div>
+            <div class="filters__box font-filters">
+                <div class="filters__icon">
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                </div>
+                <p class="filters__category">Romantique</p>
+            </div>
+            <div class="filters__box font-filters">
+                <div class="filters__icon">
+                    <i class="fa-solid fa-dog fa-lg"></i>
+                </div>
+                <p class="filters__category">Animaux autorisés</p>
+            </div>
+        </div>
+        <div class="informative">
+            <div class="informative__icon">
+                <i class="fa-solid fa-info fa-xs"></i>
+            </div>
+            <p class="informative__text">Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </main>
 
-    
 </body>
+
 </html>
